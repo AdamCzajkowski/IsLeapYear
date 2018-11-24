@@ -67,13 +67,60 @@ public class Main {
         }
     }
     ////////////////////////////////////////////////////////////
-    ////////// exercise 4 - Chinese's year////////////////////////////
+    ////////// exercise 4 - Chinese's year//////////////////////
 
-    public static void
+    public static void chinesesYear(){
+        Scanner scanner = new Scanner(System.in);
+        int year = scanner.nextInt();
+        int rest = year%12;
+        switch(rest){
+            case(0):
+                System.out.println("Rooster's year");
+                break;
+            case(1):
+                System.out.println("Dog's year");
+                break;
+            case(2):
+                System.out.println("Pig's year");
+                break;
+            case(3):
+                System.out.println("Rat's year");
+                break;
+            case(4):
+                System.out.println("Ox's year");
+                break;
+            case(5):
+                System.out.println("Tiger's year");
+                break;
+            case(6):
+                System.out.println("Rabbit's year");
+                break;
+            case(7):
+                System.out.println("Dragon's year");
+                break;
+            case(8):
+                System.out.println("Snake's year");
+                break;
+            case(9):
+                System.out.println("Horse's year");
+                break;
+            case(10):
+                System.out.println("Goat's year");
+                break;
+            case(11):
+                System.out.println("Monkey's year");
+                break;
+            default:
+                System.out.println("Error value, one more try ");
+                chinesesYear();
+                break;
+        }
+
+    }
 
 
     public static void main(String[] args) {
-      quadraticEquation();;
+      chinesesYear();
     }
 
 }
